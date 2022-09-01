@@ -10,7 +10,7 @@ body
 {
     margin: 0px;
     padding: 0px;
-    background: #E10A04 url('images/backgroundx.png') repeat-x;
+    background: black;
     font-family: Arial;
     color: #FFAEAE;
     font-size: 12px;
@@ -31,15 +31,21 @@ b
 
 #Wrapper
 {
-    background: url('images/background.png') no-repeat top center;
-    min-height: 720px;
+    min-height: 780px;
+    background:  url('images/Backgroundsudoku.jpg')  top center;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-size: cover;
+    position: absolute;
 }
 
 
 
 #Main,#Content,#Footer
 {
-    width: 980px;
+    width: 1100px;
     margin: 0 auto;
 }
 
@@ -49,7 +55,21 @@ b
     font-weight: normal;
     color: #FFFFFF;
     font-size: 33px;
+    letter-spacing: 5px;
+    text-align: center;
 }
+
+.rule
+{
+    padding: 0.5rem;
+    color: whitesmoke;
+    font-size: larger;
+}
+
+#SolvePuzzle{
+    margin-left: 31rem;
+}
+
 
 a
 {
@@ -77,11 +97,10 @@ a:hover
 #sudokuBoard
 {
     width: 426px;
-    margin-left: 40px;
+    margin-left: 4rem;
+    margin-right: 4rem;
     float: left;
-    box-shadow: 0px 0px 30px #680301;
-    -moz-box-shadow: 0px 0px 30px #680301;
-    -webkit-box-shadow: 0 0 30px #680301;
+    margin-top: 1rem;
 }
 
 #Column2
@@ -111,23 +130,22 @@ a:hover
 
 td.boardCellGroupA,td.boardCellGroupB
 {
-    background-color: #940302;
+    background-color: black;
+    padding: 0.25rem;
 }
 
 td.boardCellGroupA td.boardCell
 {
     width: 44px;
     height: 44px;
-    border: 1px solid #EC0904;
-    background-color: #DA0603;
+    background-color: black;
 }
 
 td.boardCellGroupB td.boardCell
 {
     width: 44px;
     height: 44px;
-    border: 1px solid #D40703;
-    background-color: #C40502;
+    background-color: black;
 }
 
 .staticValue
@@ -136,7 +154,7 @@ td.boardCellGroupB td.boardCell
     text-align: center;
     vertical-align: middle;
     font-size: 30px;
-    color: #6C0000;
+    color: gainsboro;
 }
 
 .staticValue,.editValue
@@ -145,7 +163,7 @@ td.boardCellGroupB td.boardCell
     height: 42px;
     padding: 0px;
     margin: 0px;
-    border: 1px solid #DA0603;
+    border: 1px solid white;
 }
 
 .editValue:hover
@@ -165,14 +183,15 @@ label
 select
 {
     font-family: Arial;
-    color: #999999;
+    color: black;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 20px;
     border-top: solid 1px #CCCCCC;
     border-left: solid 1px #E2E3EA;
     border-bottom: solid 1px #FFFFFF;
     border-right: solid 1px #E2E3EA;
-    margin: 3px 0px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
     min-width: 100px;
     background: #FDFDFD;
 }
@@ -213,11 +232,12 @@ input[type="submit"]
     color: #FFFFFF;
     text-transform: uppercase;
     border: 0px;
+    background-color: brown;
     min-width: 162px;
     min-height: 34px;
-    background: url('images/submitBackground.png') repeat-x;
-    margin: 8px 0px;
     cursor: pointer;
+    border-radius: 10px;
+    padding: 12px 25px;
 }
 
 input[type="submit"].gameControls
@@ -227,11 +247,10 @@ input[type="submit"].gameControls
     color: #FFFFFF;
     text-transform: uppercase;
     border: 0px;
-    min-width: 28px;
-    min-height: 28px;
-    background: url('images/submitSmallBackground.png') repeat-x;
+    min-width: 38px;
+    min-height: 38px;
     margin: 8px 0px;
-    padding: 2px 16px;
+    padding: 12px 25px;
     cursor: pointer;
 }
 
@@ -240,6 +259,7 @@ input[type="submit"].gameControls
     height: 142px;
     position: relative;
     top: -8px;
+    margin-top: 2rem;
 }
 
 #buttonSolve
@@ -261,12 +281,13 @@ input[type="submit"].gameControls
 #youWon div
 {
     width: 400px;
-    background: #940302;
+    background:grey;
     font-size: 40px;
     color: #FFFFFF;
     text-align: center;
     padding: 40px;
     margin: 100px auto 0px auto;
+    border-radius: 20px;
 }
 
 small
