@@ -31,8 +31,7 @@ b
 
 #Wrapper
 {
-    min-height: 780px;
-    background:  url('images/Backgroundsudoku.jpg')  top center;
+    background-color: #FFFFFF;
     top: 0px;
     right: 0px;
     bottom: 0px;
@@ -41,6 +40,11 @@ b
     position: absolute;
 }
 
+#navbar{
+    background-color: #844ef8;
+    padding: 0.05rem;
+    margin-bottom: 2rem;
+}
 
 
 #Main,#Content,#Footer
@@ -51,18 +55,28 @@ b
 
 #PageTitle
 {
-    font-family: Segoe UI, Arial;
-    font-weight: normal;
-    color: #FFFFFF;
-    font-size: 33px;
-    letter-spacing: 5px;
+    font-family: Faster One;
+    font-weight: bolder;
+    color: black;
+    font-size: 40px;
+    letter-spacing: 20px;
+    text-align: left;
+    margin-left: 1rem;
+}
+
+#PageTitleSpan{
+    font-family: Faster One;
+    font-weight: bolder;
+    color: white;
+    font-size: 40px;
+    letter-spacing: 20px;
     text-align: center;
 }
 
 .rule
 {
     padding: 0.5rem;
-    color: whitesmoke;
+    color: black;
     font-size: larger;
 }
 
@@ -113,7 +127,7 @@ a:hover
 #Footer
 {
     margin-top: 600px;
-    color: #910502;
+    color: #844ef8;
 }
 
 #FooterDetails
@@ -168,7 +182,7 @@ td.boardCellGroupB td.boardCell
 
 .editValue:hover
 {
-    background: #940302;
+    background: #844ef8;
 }
 
 label
@@ -177,13 +191,13 @@ label
     top: 3px;
     line-height: 24px;
     font-size: 15px;
-    color: #FFFFFF;
+    color: black;
 }
 
 select
 {
     font-family: Arial;
-    color: black;
+    color: white;
     font-weight: normal;
     font-size: 20px;
     border-top: solid 1px #CCCCCC;
@@ -192,8 +206,9 @@ select
     border-right: solid 1px #E2E3EA;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
+    padding: 0.5rem;
     min-width: 100px;
-    background: #FDFDFD;
+    background: black;
 }
 
 #timeFinished
@@ -232,7 +247,7 @@ input[type="submit"]
     color: #FFFFFF;
     text-transform: uppercase;
     border: 0px;
-    background-color: brown;
+    background-color: #844ef8;
     min-width: 162px;
     min-height: 34px;
     cursor: pointer;
